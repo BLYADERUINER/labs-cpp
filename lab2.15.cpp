@@ -1,5 +1,5 @@
-#include <iostream> // подключаем библеотеку ввод - вывод 
-#include <cmath> // подключаем мат.библеотеку 
+#include <iostream> // подключаем библиотеку ввод - вывод 
+#include <cmath> // подключаем мат.библиотеку 
 
 using namespace std; // создаем пространство имен std
 
