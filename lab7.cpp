@@ -11,18 +11,19 @@ int main() {
 
   setlocale(LC_ALL, "Russian"); // устанавливаем русский язык
 
-  cout << "Введите количество строк: "; // вводим количество строк матрицы
-  cin >> matrix_row;
+  cout << "Введите количество строк: ";
+  cin >> matrix_row; // вводим количество строк матрицы
 
-  cout << "Введите количество столбцов: "; // вводим количество столбцов матрицы
-  cin >> matrix_column;
+  cout << "Введите количество столбцов: ";
+  cin >> matrix_column; // вводим количество столбцов матрицы
 
   int **matrix = new int *[matrix_row]; // выделяем память под матрицу
   for (int i = 0; i < matrix_row; i++) {
-    matrix[i] = new int[matrix_column];
+    matrix[i] = new int[matrix_column]; 
   }
 
-  cout << "Введите элементы матрицы: \n" << endl; // вводим элементы матрицы
+  cout << "Введите элементы матрицы: \n" << endl;
+  
   for (int i = 0; i < matrix_row; i++) { // проходимся циклом по строкам и столбцам
     for (int j = 0; j < matrix_column; j++) {
       cout << "matrix[" << i + 1 << "][" << j + 1 << "]: "; // выводим какой элемент матрицы
@@ -31,7 +32,6 @@ int main() {
   }
   cout << endl;
 
-  // выводим матрицу
   for (int i = 0; i < matrix_row; i++) { // проходимся циклом по строкам и столбцам
     for (int j = 0; j < matrix_column; j++) {
       cout << setw(3) << matrix[i][j]; // выводим элемент матрицы

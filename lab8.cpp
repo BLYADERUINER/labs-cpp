@@ -11,8 +11,8 @@ int main() {
 
 	setlocale(LC_ALL, "Russian"); // подключаем язык
   
-	cout << "Введите строку, состоящую из алфавитно-цифровых символов: "; // вводим строку
-	cin >> input_string;
+	cout << "Введите строку, состоящую из алфавитно-цифровых символов: ";
+	cin >> input_string; // вводим строку
 
 	// проходимся циклом по каждому символу в введенной строке
 	for (char symbol : input_string) {
@@ -29,7 +29,7 @@ int main() {
 	// объединяем строки digits и letters
 	result = digits + letters;
 
-	cout << "Результат: " << result << endl; // выводим результат
+	cout << "Результат: " << result << endl;
 
 	return 0;
 }

@@ -1,21 +1,20 @@
 #include <iostream> // подключаем библиотеку ввод - вывод
 #include <iomanip> // подключаем библиотеку модификаторов
-#include <cmath> // подключаем библиотеку матем.
+#include <cmath> // подключаем математическую библиотеку
 
 using namespace std; // создаем пространство имен std
 
-int main()
-{
+int main() {
   double x, b, a, y = 0; // объявляем переменные
   int n, i = 0;
   
   setlocale(LC_ALL, "Russian"); // подключаем язык
 
-  cout << "Введите X" << endl; // ввод X
-  cin >> x;
+  cout << "Введите X" << endl;
+  cin >> x; // ввод X
 
-  cout << "Введите N" << endl; // ввод N
-  cin >> n;
+  cout << "Введите N" << endl;
+  cin >> n; // ввод N
 
   a = sin(x); // присваиваем sin x
   b = sqrt(2); // присваиваем √ 2
